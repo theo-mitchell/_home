@@ -3,8 +3,7 @@
 set -o errexit
 
 poetry install
-
-which python3
+whitenoise install
 
 python manage.py collectstatic --no-input
 python manage.py migrate
