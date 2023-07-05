@@ -3,7 +3,7 @@
 set -o errexit
 
 poetry install
-whitenoise install
+poetry add 'whitenoise[brotli]'
 
 python manage.py collectstatic --no-input
 python manage.py migrate
